@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Places You've Been</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Places You've Been</h1>
+      <div class="row">
+        <h2>Add a Place:</h2>
+        <form id="places">
+          <div class="form-group">
+            <label for="name">Name: </label>
+            <input type="text" id="name" class="form-control" required>
+            <label for="location">Location: </label>
+            <input type="text" id="location" class="form-control" required>
+            <label for="time-of-year">Time of Year: </label>
+            <input type="text" id="time-of-year" class="form-control" required>
+            <label for="notes">Notes & Etc: </label>
+            <input type="text" id="notes" class="form-control"required>
+          </div>
+          <button type="submit" class="btn btn-success">Add Place</button>
+        </form>
+        <h2>Places:</h2>
+        <ul id="places">
+
+        </ul>
+
+        <div class="col-md-6">
+          <div id="show-places">
+
+
+            <h2></h2>
+            <p>Location: <span class='location'></span></p>
+            <p>Time of Year: <span class='time-of-year'></span></p>
+            <p>Notes & Etc: <span class='notes'></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
